@@ -14,6 +14,7 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    @comment = Comment.new
   end
 
 def create
