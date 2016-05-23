@@ -1,13 +1,15 @@
 Blogger::Application.routes.draw do
-  root 'articles#index'
+
   resources :articles do
-    resources :comments
+  resources :comments
+
 
   end
     resources :tags
     resources :authors
-    resources :author_sessions, only: [ :new, :create, :destroy]
-
+    resources :author_sessions
+    
+root 'articles#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
