@@ -23,8 +23,3 @@
 <%= @article.comments.size %>
 
 <%= link_to "<< Back to Articles List", articles_path %>
-
-<% if logged_in? %>
-  <%= link_to "edit", edit_article_path(@article) %>
-
-<% end %>
